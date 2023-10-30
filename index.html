@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="page.css" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon-32x32.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+    <title>PEX</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-green nav-flex-item">
+            <a class="navbar-brand" onclick="loadPage('home')">
+                <img class="logo" src="imgs/Logo 02.png" alt="logo"/>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav nav-flex-items">
+                <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadPage('home')">Início</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadPage('sobre')">Sobre</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadPage('cursos')">Cursos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadPage('eventos')">Eventos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadPage('contato')">Contato</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadPage('news')">Notícias</a>
+                </li>
+                <li>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" class="form-control" placeholder="Pesquisar">
+                </div>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="page">
+        <div class="container">
+            <div class="container-vertical">
+                <div class="home-text">
+                    <h1>Propriedade <span>intelectual</span> ao alcance da sua <span>empresa</span></h1>
+                    <p>A propriedade intelectual é um recurso valioso que pode impulsionar o sucesso da sua empresa, protegendo suas ideias, produtos e marca contra concorrência e garantindo vantagem no mercado</p>
+                </div>
+                <img src="imgs/home.jpeg" class="w60" alt="mulher digitando com ícones ligados a negócios"/>
+            </div>
+        </div>
+        <div class="container-total">
+            <div class="container-content container-list">
+                <div class="card dark-card">
+                    <img class="card-img-top" src="imgs/curso1.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cursos</h5>
+                        <p class="card-text">Propriedade Intelectual e a Indústria de Alimentos e Bebidas</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('cursos/curso1')">Saiba +</a>
+                    </div>
+                </div>
+                <div class="card dark-card">
+                    <img class="card-img-top" src="imgs/curso2.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cursos</h5>
+                        <p class="card-text">Impactos da IA no juízo de admissibilidade dos Recursos Excepcionais.</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('cursos/curso2')">Saiba +</a>
+                    </div>
+                </div>
+                <div class="card dark-card">
+                    <img class="card-img-top" src="imgs/curso3.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cursos</h5>
+                        <p class="card-text">Propriedade Intelectual e a Indústria Automotiva</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('cursos/curso3')">Saiba +</a>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <div class="container-total dark">
+            <div class="container-content container-list">
+                <div class="card light-card">
+                    <img class="card-img-top" src="imgs/eventos1.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos</h5>
+                        <p class="card-text">Questões relevantes sobre divisão de pedidos de patente</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('eventos/evento1')">Saiba +</a>
+                    </div>
+                </div>
+                <div class="card light-card">
+                    <img class="card-img-top" src="imgs/eventos2.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos</h5>
+                        <p class="card-text">Clearance em atividades de entretenimento</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('eventos/evento2')">Saiba +</a>
+                    </div>
+                </div>
+                <div class="card light-card">
+                    <img class="card-img-top" src="imgs/eventos3.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos</h5>
+                        <p class="card-text">Grandes Teses de Direito Autoral: plágio e mineração de dados</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('eventos/evento3')">Saiba +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-total">
+            <div class="container-content container-list">
+                <div class="card dark-card">
+                    <img class="card-img-top" src="imgs/news1.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Notícias</h5>
+                        <p class="card-text">Alterados calendários de processos seletivos de mestrado e doutorado</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('news/news1')">Saiba +</a>
+                    </div>
+                </div>
+                <div class="card dark-card">
+                    <img class="card-img-top" src="imgs/news2.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Notícias</h5>
+                        <p class="card-text">INPI e UFRJ firmam parceria para promover saúde do servidor</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('news/news2')">Saiba +</a>
+                    </div>
+                </div>
+                <div class="card dark-card">
+                    <img class="card-img-top" src="imgs/news3.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Notícias</h5>
+                        <p class="card-text">Plano de ação da ENPI prevê concessão de patentes em 3 anos até 2025</p>
+                        <a href="#" class="btn btn-custom" onclick="loadPage('news/news3')">Saiba +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img class="logo" src="imgs/Logo 02.png" alt="logo"/>
+        <div class="footer-container">
+            <div class="socialmedia-container">
+                Siga nossas redes sociais
+                <div class="socialmedialink-container">
+                    <a href="#" class="icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            &copy 2023 Instituto e-Printe de Educação em Propriedade Intelectual
+        </div>
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
